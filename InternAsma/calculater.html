@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Calculater</title>
+	<style>
+
+	h1 {
+		text-align:center;
+        font-size: 9ch;
+        color: chocolate;
+	}
+    body {
+        background-color: antiquewhite;
+    }
+    button {
+        background-color: burlywood;
+        text-align:center;
+    }
+    .beauty {
+        color: darksalmon;
+        text-align: center;
+    }
+    .pretty {
+        text-align: center;
+    }
+    .ab {
+        margin: 2% 6%;
+        padding: 2% 5%;
+        font-size: 18;
+    }
+    .cd {
+        margin: 2% 6%;
+        padding: 2% 5%;
+        font-size: 18;
+    }
+    .ef {
+        margin: 2% 6%;
+        padding: 2% 5%;
+        font-size: 18;
+    }
+    .gh {
+        margin: 2% 6%;
+        padding: 2% 5%;
+        font-size: 18;
+    }
+    input {
+        font-size: 3.5ch;
+    }
+    label {
+        font-size: 3.5ch;
+    }
+
+    </style>
+</head>
+  <script>
+      var a,b,c
+      function Sum1() 
+      {
+      a=Number(document.getElementById("va").value)
+      b=Number(document.getElementById("vb").value)
+      c=a+b
+       document.getElementById("ans").value=c
+      }
+
+      function Sub1()
+      {
+        a=Number(document.getElementById("va").value)
+        b=Number(document.getElementById("vb").value)
+        c=a-b
+        document.getElementById("ans").value=c
+      }
+
+      function Mul1()
+      {
+        a=Number(document.getElementById("va").value)
+        b=Number(document.getElementById("vb").value)
+        c=a*b
+        document.getElementById("ans").value=c
+      }
+
+      function Div1()
+      {
+        a=Number(document.getElementById("va").value)
+        b=Number(document.getElementById("vb").value)
+        c=a/b
+        document.getElementById("ans").value=c
+      }
+  </script>
+
+<body>
+  <h1 >
+    	Arithmetic Operations
+  </h1>
+<br><br><br><br><br><br>
+    <div class="beauty">
+    <label>
+      Value of A:
+    </label>
+       <input type="number" placeholder="Enter Value" id="va">
+    <label style="margin-left: 30px;">
+      Value of B:
+    </label>
+       <input type="number" placeholder="Enter Value" id="vb">
+<br><br>
+    <label for="ans" >
+      Result:
+    </label>
+       <input id="ans" placeholder="ANSWER">
+    </div>
+    <div class="pretty">
+       <br><br>
+        <button class="ab" type="button" onclick="Sum1()"> ADD </button>
+       
+        <button class="cd" type="button" id="ans" onclick="Sub1()"> SUB </button>
+       <br><br>
+        <button class="ef" type="button" id="ans" onclick="Mul1()"> MUL </button>
+       
+       <button class="gh" type="button" id="ans" onclick="Div1()"> DIV </button>
+    </div>
+  </body>
+</html>
