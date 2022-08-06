@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <style>
+      h1{font-size:70px;
+        color:whitesmoke;
+        text-align:center;
+      }
+      body {
+        background-color: darkslategray;
+      }
+      .square {
+        margin: 20%;
+      }
+    </style>
+  </head>
+<body>
+  <main>
+    <section class="square">
+      <h1>Sign up to be a Member</h1>
+      <form action="dbconnection (1).php" method="post">
+        <label for="Name" style="margin-left: 150px;"><b>NAME:</b></label>
+        <input type="text" id="Name" style="text-align:center;" name="Name" placeholder="enter your name" required>
+
+        <br><br><label for="Phone_no" style="margin-left: 150px;"><b>PHONE NUMBER:</b></label>
+        <input type="tel" id="Phone_no" name="Phone_no" placeholder="enter number" style="text-align:center;" pattern=".{10,}" 
+        title="Enter a 10-digit valid mobile number" required>
+
+          <br><br><label for="Email_id" style="margin-left: 150px;"><b>EMAIL:</b></label>
+            <input type="email" id="Email_id" name="Email_id"  style="text-align:center;" placeholder="enter email id "
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" >
+
+          <br><br><label for="User_id" style="margin-left: 150px;"><b>UserName:</b></label>
+          <input type="text" id="User_id" name="User_id" style="text-align:center;" placeholder="create a user_id">
+
+          <br><br><label for="Password" style="margin-left: 150px;"><b>PASSWORD:</b></label>
+          <input type="password" id="Password" name="Password" style="text-align:center;" placeholder="Strong password" 
+          pattern=".{8,}" title="Must Include 8 characters" required>
+
+          <br><br><button type="submit" ; name="submit" style="text-align:center; margin-left: 150px; font-size:18px;"> SUBMIT</button>
+        </form>
+</section>
+</main>
+</body>
+</html>
